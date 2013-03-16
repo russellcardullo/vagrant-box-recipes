@@ -1,0 +1,15 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+$script = <<SCRIPT
+sudo true && curl -L https://www.opscode.com/chef/install.sh | sudo bash
+SCRIPT
+
+Vagrant.configure("2") do |config|
+  config.vm.provider :aws do |aws|
+    aws.ami = 'ami-21e47148'
+    aws.ssh_username = "ubuntu"
+  end
+
+  config.vm.provision :shell, :inline => $script
+end
