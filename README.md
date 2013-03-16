@@ -1,6 +1,6 @@
 Vagrant box recipes to use with the new vagrant-aws provider.
 
-This repository contains Vagrantfiles that can be used as base boxes for provisioning on EC2 with Chef. Currently it just contains a box for Ubuntu 12.04.  When provisioning the box will automatically install the latest version of Chef via the omnibus isntaller.
+This repository contains Vagrantfiles that can be used as base boxes for provisioning on EC2 with Chef. Currently it just contains a boxes for Ubuntu 10.04, 12.04 and 12.10.  When provisioning the box will automatically install the latest version of Chef via the omnibus isntaller.
 
 To use, run:
 
