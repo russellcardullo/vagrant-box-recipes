@@ -2,8 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure("2") do |config|
-  config.vm.provider :aws do |aws|
+  config.vm.provider :aws do |aws, override|
     aws.ami = 'ami-21e47148'
-    aws.ssh_username = "ubuntu"
+    override.ssh.username = "ubuntu"
   end
 end
