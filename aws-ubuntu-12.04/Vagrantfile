@@ -3,7 +3,7 @@
 
 Vagrant.configure("2") do |config|
   config.vm.provider :aws do |aws, override|
-    aws.ami = 'ami-3d4ff254'
+    aws.ami = 'ami-0568456c'
     override.ssh.username = "ubuntu"
   end
 end
